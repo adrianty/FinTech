@@ -1,0 +1,197 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="567.333333333333,2830" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="38">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <ueab:SequenceX sap:VirtualizedContainerService.HintSize="572,2765.33333333333" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="uasb:BindingsRepository" Default="[new UiPath.Activities.System.Binding.BindingsRepository()]" Name="Saved" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser IE: Apple Inc. (AAPL) Stock Price, News, Quote &amp; History - Yahoo Finance" sap:VirtualizedContainerService.HintSize="530,2675.33333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="518,2452" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGetText DisplayName="Get Text 'NasdaqGS -'" sap:VirtualizedContainerService.HintSize="476,167.333333333333" sap2010:WorkflowViewState.IdRef="NGetText_1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://sg.finance.yahoo.com/quote/AAPL?p=AAPL&amp;.tsrc=fin-srch" DesignTimeRectangle="31, 788, 170, 73" ElementType="Text" FriendlyName="'109.56'" FullSelectorArgument="&lt;webctrl aaname='109.56' parentid='quote-header-info' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='quote-header-info' tag='SPAN' type='' /&gt;" ImageBase64="" InformativeScreenshot="18633f2ffd073a5b7af807034cb6340b.png" ScopeSelectorArgument="&lt;html title='Apple Inc. (AAPL) Stock Price, News, Quote &amp;amp; History - Yahoo Finance' /&gt;" SearchSteps="FuzzySelector" Text="109.56" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='SPAN' type='' /&gt;">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="31, 751, 485, 20" ElementType="Text" FriendlyName="'NasdaqGS -'" FullSelectorArgument="&lt;webctrl idx='1' parentid='quote-header-info' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='quote-header-info' tag='SPAN' aaname='NasdaqGS - NasdaqGS Real Time Price. Currency in USD' check:text='NasdaqGS - NasdaqGS Real Time Price. Currency in USD' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" Text="NasdaqGS - NasdaqGS Real Time Price. Currency in USD" TextMethod="AttributeText" TextSelector="&lt;webctrl type='' tag='SPAN' /&gt;" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="ue:ExcelValue">[Saved.Values(Of ExcelValue)("Apple Stock Price")]</OutArgument>
+              </uix:NGetText.Text>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NGetText>
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="476,82.6666666666667" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://sg.finance.yahoo.com/quote/MSFT?p=MSFT" />
+            <uix:NGetText DisplayName="Get Text 'NasdaqGS -'" sap:VirtualizedContainerService.HintSize="476,167.333333333333" sap2010:WorkflowViewState.IdRef="NGetText_2">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://sg.finance.yahoo.com/quote/MSFT?p=MSFT" DesignTimeRectangle="31, 788, 170, 73" ElementType="Text" FriendlyName="'202.95'" FullSelectorArgument="&lt;webctrl aaname='202.95' parentid='quote-header-info' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='quote-header-info' tag='SPAN' type='' /&gt;" ImageBase64="" InformativeScreenshot="154c853f5f3c5b6fb9271c2e503f8bf2.png" ScopeSelectorArgument="&lt;html title='Microsoft Corporation (MSFT) Stock Price, News, Quote &amp;amp; History - Yahoo Finance' /&gt;" SearchSteps="FuzzySelector" Text="202.95" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='SPAN' type='' /&gt;">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="31, 751, 485, 20" ElementType="Text" FriendlyName="'NasdaqGS -'" FullSelectorArgument="&lt;webctrl idx='1' parentid='quote-header-info' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='quote-header-info' tag='SPAN' aaname='NasdaqGS - NasdaqGS Real Time Price. Currency in USD' check:text='NasdaqGS - NasdaqGS Real Time Price. Currency in USD' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" Text="NasdaqGS - NasdaqGS Real Time Price. Currency in USD" TextMethod="AttributeText" TextSelector="&lt;webctrl type='' tag='SPAN' /&gt;" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="ue:ExcelValue">[Saved.Values(Of ExcelValue)("Microsoft Stock Price")]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="476,82.6666666666667" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" Url="https://sg.finance.yahoo.com/quote/ZM?p=ZM&amp;.tsrc=fin-srch" />
+            <uix:NGetText DisplayName="Get Text 'NasdaqGS -'" sap:VirtualizedContainerService.HintSize="476,167.333333333333" sap2010:WorkflowViewState.IdRef="NGetText_3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://sg.finance.yahoo.com/quote/ZM?p=ZM&amp;.tsrc=fin-srch" DesignTimeRectangle="31, 788, 170, 73" ElementType="Text" FriendlyName="'418.69'" FullSelectorArgument="&lt;webctrl aaname='418.69' parentid='quote-header-info' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='quote-header-info' tag='SPAN' type='' /&gt;" ImageBase64="" InformativeScreenshot="67bd1093047ca89893642a8b9d066126.png" ScopeSelectorArgument="&lt;html title='Zoom Video Communications, Inc. (ZM) Stock Price, News, Quote &amp;amp; History - Yahoo Finance' /&gt;" SearchSteps="FuzzySelector" Text="418.69" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='SPAN' type='' /&gt;">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="31, 751, 485, 20" ElementType="Text" FriendlyName="'NasdaqGS -'" FullSelectorArgument="&lt;webctrl idx='1' parentid='quote-header-info' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='quote-header-info' tag='SPAN' aaname='NasdaqGS - NasdaqGS Real Time Price. Currency in USD' check:text='NasdaqGS - NasdaqGS Real Time Price. Currency in USD' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" Text="NasdaqGS - NasdaqGS Real Time Price. Currency in USD" TextMethod="AttributeText" TextSelector="&lt;webctrl type='' tag='SPAN' /&gt;" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="ue:ExcelValue">[Saved.Values(Of ExcelValue)("Zoom Stock Price")]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <ueab:ExcelApplicationCard Password="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="476,1492" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" WorkbookPath="Portfolio.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Portfolio" />
+                  </ActivityAction.Argument>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="464,1224" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:InsertRowsX DisplayName="Insert Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="422,188.666666666667" sap2010:WorkflowViewState.IdRef="InsertRowsX_1" InsertPosition="Start" NbOfRows="1" Range="[Portfolio.Table(&quot;Table1&quot;)]" SpecificIndex="7">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:InsertRowsX>
+                    <ueab:WriteCellX Cell="[Portfolio.Sheet(&quot;Sheet1&quot;).Cell(&quot;A7&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="422,166" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[string.Format(&quot;=TODAY()&quot;)]" />
+                    <ueab:WriteCellX Cell="[Portfolio.Sheet(&quot;Sheet1&quot;).Cell(&quot;B7&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="422,166" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[Saved.Values(Of ExcelValue)(&quot;Apple Stock Price&quot;)]" />
+                    <ueab:WriteCellX Cell="[Portfolio.Sheet(&quot;Sheet1&quot;).Cell(&quot;C7&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="422,166" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[Saved.Values(Of ExcelValue)(&quot;Microsoft Stock Price&quot;)]" />
+                    <ueab:WriteCellX Cell="[Portfolio.Sheet(&quot;Sheet1&quot;).Cell(&quot;D7&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="422,166" sap2010:WorkflowViewState.IdRef="WriteCellX_4" Value="[Saved.Values(Of ExcelValue)(&quot;Zoom Stock Price&quot;)]" />
+                    <ueab:SaveExcelFileX DisplayName="Save Excel File" sap:VirtualizedContainerService.HintSize="422,80" sap2010:WorkflowViewState.IdRef="SaveExcelFileX_1" Workbook="[Portfolio]" />
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp BrowserType="IE" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAJdSURBVFhHY0hgvPR/IPGoA0YdMHwdUKN36/+TK99R8Lq6FxjqaOaAY0ve/UcHzZZ3MNTRxAEF0tf+//71D2otBDw49w2rWpo4YEvHK6i1CDAz5hFWtVR3QBr35f9f3v2BWgsB757++p/Mil09VgfcPvYFqhUCDs55i6FmfcMLqCwE3DnxFSy+OOcpVAQBVlU8x9APw1gdMCXkAVQrBPz4+vd/psAVuHwSyyWwr5DBtIiH/xOZLv1/cfsHVAQCfnz5+z9L8CqK+cgYqwMSmS/9f33/J9QICFia/xQuj+7Ad09+gR01MQBVHAT2THmDYjY6xpkGlhagBuWz69/hctf2fYaKQsDqSkgQ3ziEGnV///77X6ZyA64PG8bpgAzeK/+/fURNTB2Od/9Xat6E8iDg57e//7OFr/5P5bwMDn5kfGAWZtpBxzgdAMLbe1Cz06nVH/7vnvQayoMAZEtAjk5hv4xiBiGM1wFFctf///mNKFBA7G+fUEOlSvvm/xyRq/8v7fj0/9+/f2A1IEdiMw8bxusAED6x4j3UKkxwedcnsJojCzGL3emRDzHMwoYJOqDR7DbUSEzQ530frObJ1e9QEQTY2IRZ8WDDBB0AwreOoKZuEHh+8wdcfs/UN1BRCABFRYs1ZsWDDRPlgMlBmPl7UfYTuDyo+N077c3/Nw9//n94/hu4UELWjw8T5YB+n/tQayHg64c//9N5ECUjJZgoB6AXPKDsiU0dOZigA2oNbkGthYC/f/79L1a4jlUtOZigA44uQs1ip9d+wKqOXExUFNASjzpg1AED7IBL/wEEb/bMxqNS/AAAAABJRU5ErkJggg==" InformativeScreenshot="524e5d0217a32842f0bfb602daee3647.png" Selector="&lt;html title='Apple Inc. (AAPL) Stock Price, News, Quote &amp;amp; History - Yahoo Finance'/&gt;" Url="https://sg.finance.yahoo.com/quote/AAPL?p=AAPL&amp;.tsrc=fin-srch" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </ueab:SequenceX>
+</Activity>
