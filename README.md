@@ -1,2 +1,2 @@
 # FinTech
-#FinTech course project work - Refer to sub branches for details
+#fintech - Assignments done in APIs and RPA module
