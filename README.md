@@ -1,2 +1,2 @@
 # FinTech
-#FinTech course project work - Refer to sub branches for details
+#fintech - Homework done in DevOps Build, Deploy and Monitor module
